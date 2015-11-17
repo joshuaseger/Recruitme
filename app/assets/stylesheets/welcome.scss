@@ -1,3 +1,32 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+ #background-image{
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  padding: 0px;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+ } 
+ 
+ .jumbotron{
+ 	height: auto;
+ 	width: 100%;
+ 	margin: 0px;
+ 	padding: 50px;
+ }
+ 
+ #primary-content-left{
+ 	display: block;
+	left: 10%;
+ 	height:600px;
+ 	width: 45%;
+ 	background-color: yellow;
+ 	opacity: .3;
+ 	border-radius: 40px;
+ }

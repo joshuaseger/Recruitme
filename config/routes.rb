@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :users
+  get 'signup69' => 'signup#new'
+  get 'home' => 'home#index'
+  get 'welcome', to:'welcome#about', as:'about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

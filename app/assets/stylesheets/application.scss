@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#top-navbar	{
+	width: 100%; /* Spans the width of the page */
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: fixed; 
+
+
+	}
+
+.menu-bar{
+	height: 50px;
+	top: 0px;
+	left: 50%;
+    padding: 0;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 1px solid #54879d; 
+	opacity: .5;
+	}
+.menu-bar li 	{
+	height: auto;
+	width: 125px;  /* Each menu item is 150px wide */
+	float: left;  /* This lines up the menu items horizontally */
+	text-align: center;  /* All text is placed in the center of the box */
+	list-style: none;  /* Removes the default styling (bullets) for the list */
+	font: normal bold 18px/1.2em Arial, Verdana, Helvetica; 
+	padding: 0;
+	margin: 10px;
+	background-color: white;
+	border-radius: 10px;
+    }
+
+.menu-bar a	{							
+	padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: #baa13f; /* font color */ 
+	display: block;
+	opacity: 1;
+	}
+	
+.menu-bar li:hover, a:hover {
+	background-color: white;
+} 
+
+.menu-bar li ul 	{
+	display: none;  /* Hides the drop-down menu */
+	height: auto;									
+	margin: 0; /* Aligns drop-down box underneath the menu item */
+	margin-right: 10px;
+	padding: 0; /* Aligns drop-down box underneath the menu item */			
+	}				
+
+.menu-bar li:hover ul {
+    display: block; /* Displays the drop-down box when the menu item is hovered over */
+    }
+ .menu-bar li ul li {
+ 	background-color: #white;
+ 	margin: 0px;
+ 	left: 0px;
+ } 
+
+.menu-bar li ul li a 	{
+	border-left: 1px solid grey; 
+	border-right: 1px solid grey; 
+	border-top: 1px solid grey; 
+	border-bottom: 1px solid grey; 
+
+	}
+
+.menu-bar li ul li a:hover	{
+	background-color: green;
+}
+
+#bottom-navbar{
+	height: 100px;
+	width: 100%;
+	background-color: black;;
+	left: 0px;
+	position: absolute;
+	margin: 0px;
+}
+
+ a:link{
+	color: white;
+
+ }
+ a:hover{
+	color: #baa13f;
+ }
+ a:visited{
+
+ }
+
+
