@@ -8,29 +8,25 @@
 </head>
 <body>
 <div id="page-container">
-<div id="top-navbar">
-	<h1 id="site-title">Reverse<br id="site-title-line">Recruiting</h1>
-		<ul class="menu-bar">
-		<li><a href="#">Sports</a>
-			<ul>
-				<li><a href="#">Football</a></li>
-				<li><a href="#">Mens Basketball</a></li>
-				<li><a href="#">Mens Soccer</a></li>
-				<li><a href="#">Volleyball</a></li>
-			</ul>
-		</li>
-		<li><%= link_to 'About', about_path %></li>
-		<li><a href="#">Sign up</a></li>
-		<li><a href="#">Login</a></li>
-	</ul>
-	<div id="menu-icon"></div>
-</div>
-
- <%= yield %>
+	
+	<div id="top-navbar">
+		<%= image_tag "TitleLogo.png", alt: "Title Image", id: "title-image" %>
+			<ul id="menu-bar">
+			<li><a href="#">Sports</a></li>
+			<li><%= link_to 'About', about_path %></li>
+			<li id="nav-sign-up"><a>Sign up</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+		<div id="menu-icon"></div>
+	</div>
+	
+	 <%= yield %>
 
 
-<div id="bottom-navbar"></div>
-</div>
+	<div id="bottom-navbar"></div>
+	</div>
+
+	
 
 </body>
 </html>

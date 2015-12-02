@@ -2,13 +2,32 @@
 <%= image_tag "background-coach.png", alt: "Recruiter Image", id: "background-image" %>
 <div class="jumbotron">
 	<div id="primary-content-left">
-		<h2>
-		What is Reverse Recruiting?
-		</h2>
+		<h1>Find the perfect NCAA program for you.</h1>
 		<p>
-		Reverse Recruiting is the only tool designed to help high school athletes find the collegiate athletic program that fits them academically, financially, and athletically.  Using our sport specific filterable maps, our goal is to help you find the program where you will be the most successful, whether that means a top Division-I school or a Division-3 program with kick ass acadmics.
+		We help athletes find the NCAA program that suits them best based on financial, academic, and athletic needs.
 		</p>
+		<table id="sports-images">
+			<tr>
+			<td><%= image_tag "soccer-ball.png", alt: "soccer Image", id: "soccer-ball-image" %></td>
+			<td><%= image_tag "football.png", alt: "football Image", id: "football-image" %></td>
+			<td><%= image_tag "baseball.png", alt: "baseball Image", id: "baseball-image" %></td>
+			<td><%= image_tag "volleyball.png", alt: "volleyball Image", id: "volleyball-image" %></td>
+			</tr>
+		</table>
 	</div>
 	<div id="primary-content-right"></div>
 </div>
-<div id="secondary-content"></div>
+<div id="secondary-content">
+	<h5>
+		Reverse Recruiting is the only tool designed to help high school athletes find the collegiate athletic program that fits them academically, financially, and athletically.  While 30% of high school athletes claim they want to play their sport at the next level, only about 15% end up doing so.  No matter your playing level, there exists a collegiate athletic program that would be happy to have you.  Using our sport specific filterable maps, our goal is to help you find the program where you will be the most successful, whether that means a top Division-I school or a Division-3 program with kick ass acadmics.
+	</h5>
+</div>
+
+<div class="container-popup">
+		<div class="popup">
+		<div id="x-icon">
+			<%= image_tag "delete.svg", alt: "x-icon image", id:"x-icon" %>
+		</div>
+			<%= image_tag "Signup.png", alt: "Recruiter Image", id: "signup-image" %>
+		</div>
+	</div>
