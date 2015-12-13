@@ -14,8 +14,15 @@
  *= require_self
  */
 
+//Helper Methods
+.show{
+	visibility: visible;
+}
+.hidden{
+	visibility: hidden;
+}
 
-
+//Layout specific code
 body {
  	padding: 0px;
  	margin: 0px;
@@ -26,49 +33,76 @@ body {
     linear-gradient(
       black, white
     );
-    height: 1200px;
-
+    height: 1300px;
 }
+
+#background-image{
+  position: absolute; 
+  top: 40px; 
+  left: 0px; 
+  padding: 0px;
+  margin:0px;
+  /* Preserve aspet ratio */
+  width: 900px;
+  height: auto;
+  z-index: 0;
+
+  @media screen and (min-width: 900px){
+  	width: 100%;
+  	max-width: 100%;
+  }
+} 
 
 #site-title{
 	color: white;
 }
 #title-image{
-	height: 35px;
+	height: 45px;
 	width: auto;
 	margin-top: 5px;
 	margin-left: 5px;
 	z-index: 4;
 	padding-right: 30px;
+
+	@media screen and (min-width: 900px){
+		height:65px;
+	}
 }
 
 #top-navbar	{
 	background-color: black; 
 	display: block;
 	width: 98%; /* Spans the width of the page */
-	height: 40px;
+	height: 120px;
 	top: 0px;
 	left: 1%;
 	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
 	z-index: 100; 
 	position: fixed; 
 	padding: 0px;
-
+	@media screen and (min-width: 900px){
+		height: 70px;
+	}
 	}
 
 #menu-bar{
+	border-top: solid 3px #baa13f;
 	height: 40px;
-	top: 0px;
+	top: 80px;
 	right: 0%;
     padding: 0;
 	margin: 0;
 	position: absolute; /* Ensures that the menu doesn’t affect other elements */
 	z-index: 4;
 
+	@media screen and (min-width: 900px){
+		top:30px;
+		border-top: none;
+	}
 	}
 #menu-bar li 	{
 	height: auto;
-	width: 125px;  /* Each menu item is 150px wide */
+	width: 90px;  /* Each menu item is 150px wide */
 	float: left;  /* This lines up the menu items horizontally */
 	text-align: center;  /* All text is placed in the center of the box */
 	list-style: none;  /* Removes the default styling (bullets) for the list */
@@ -76,8 +110,11 @@ body {
 	padding: 0;
 	background-color: rgba(230, 230, 230, .01); 
 	position: relative;
+	@media screen and (min-width: 900px){
+		width: 125px;
+	}
 
-    }
+}
 
 #menu-bar a	{							
 	padding-top: 8px;

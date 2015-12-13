@@ -1,0 +1,26 @@
+#lets-talk{
+  position: absolute;
+  bottom:0px;
+  width:100%;
+  display: block;
+  z-index: 10;
+  height:500px;
+  table{
+    width:110%;
+    margin-left: 40%;
+    text-align: justify;
+
+    td{
+      margin:100px;
+      &:hover{
+      border-bottom: 3px solid black;
+      } 
+    }
+  }
+}
+#footer-menu{
+  bottom: 0px;
+  display: block;
+  width: 100%;
+
+}
