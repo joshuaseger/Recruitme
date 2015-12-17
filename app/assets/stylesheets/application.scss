@@ -38,18 +38,22 @@ body {
 
 #background-image{
   position: absolute; 
-  top: 40px; 
+  top: 120px; 
   left: 0px; 
   padding: 0px;
   margin:0px;
   /* Preserve aspet ratio */
-  width: 900px;
+  width: 795px;
   height: auto;
   z-index: 0;
-
   @media screen and (min-width: 900px){
+  	top:40px;
+  }
+
+  @media screen and (min-width: 800px){
   	width: 100%;
   	max-width: 100%;
+  	
   }
 } 
 
@@ -72,14 +76,18 @@ body {
 #top-navbar	{
 	background-color: black; 
 	display: block;
-	width: 98%; /* Spans the width of the page */
+	width: 100%; /* Spans the width of the page */
 	height: 120px;
 	top: 0px;
-	left: 1%;
+	left: 0;
 	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
 	z-index: 100; 
 	position: fixed; 
 	padding: 0px;
+	@media screen and (min-width: 800px){
+		width: 98%;
+		left: 1%;
+	}
 	@media screen and (min-width: 900px){
 		height: 70px;
 	}
